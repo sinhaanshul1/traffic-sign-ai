@@ -1,6 +1,6 @@
 # Traffic Project
 
-A project to analyze and manage traffic data from the ```gtsrb``` dataset.
+An AI model that categorizes German traffic signs based on images using a convolutional neural network (made as part of Harvard CS50 AI course).
 
 ## Features
 
@@ -20,6 +20,18 @@ A project to analyze and manage traffic data from the ```gtsrb``` dataset.
 
 ## Usage
 
+Install requirements using ```pip install -r requirements.txt```
+
+To train a new model:
 ```bash
-npm start
+python traffic.py gtsrb
+```
+
+If you want to save the model to a file (example model saved as ```model.h5```):
+```bash
+python traffic.py gtsrb filename.h5
+```
+or 
+```bash
+python traffic.py gtsrb filename.keras
 ```
